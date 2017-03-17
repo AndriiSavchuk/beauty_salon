@@ -1,0 +1,98 @@
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: normal; src: url("../fonts/RobotoRegular/RobotoRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoRegular/RobotoRegular.woff2") format("woff2"), url("../fonts/RobotoRegular/RobotoRegular.woff") format("woff"), url("../fonts/RobotoRegular/RobotoRegular.ttf") format("truetype"), url("../fonts/RobotoRegular/RobotoRegular.svg#Roboto") format("svg"); }
+
+@font-face { font-family: "Roboto"; font-style: normal; font-weight: bold; src: url("../fonts/RobotoBold/RobotoBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RobotoBold/RobotoBold.woff2") format("woff2"), url("../fonts/RobotoBold/RobotoBold.woff") format("woff"), url("../fonts/RobotoBold/RobotoBold.ttf") format("truetype"), url("../fonts/RobotoBold/RobotoBold.svg#Roboto") format("svg"); }
+
+/* Base styles of the project */
+body { position: relative; min-width: 320px; height: 100%; background-color: #eee; font-family: "RobotoRegular", sans-serif; font-size: 16px; color: #000; overflow-x: hidden; -webkit-font-smoothing: antialiased; -moz-osx-font-smoothing: grayscale; }
+
+/* Headings */
+h1, h2, h3, h4, h5, h6 { margin: 0; font-family: "Georgia", serif; }
+
+/* Links */
+a { color: #ffffff; text-decoration: none; }
+
+a:hover { text-decoration: none; color: #fff; }
+
+/* Form inputs */
+input[type='text'], input[type='number'], input[type='email'], input[type='tel'], input[type='search'], input[type='url'], input[type='file'], input[type='password'], textarea { padding: 8px; margin-bottom: 15px; color: #000; font-size: 16px; background: #fff; border: 2px solid #fff; -webkit-border-radius: 4px; border-radius: 4px; }
+
+input[type='text']::-webkit-input-placeholder, input[type='number']::-webkit-input-placeholder, input[type='email']::-webkit-input-placeholder, input[type='tel']::-webkit-input-placeholder, input[type='search']::-webkit-input-placeholder, input[type='url']::-webkit-input-placeholder, input[type='file']::-webkit-input-placeholder, input[type='password']::-webkit-input-placeholder, textarea::-webkit-input-placeholder { color: #000; font-size: 16px; }
+
+input[type='text']::-moz-placeholder, input[type='number']::-moz-placeholder, input[type='email']::-moz-placeholder, input[type='tel']::-moz-placeholder, input[type='search']::-moz-placeholder, input[type='url']::-moz-placeholder, input[type='file']::-moz-placeholder, input[type='password']::-moz-placeholder, textarea::-moz-placeholder { color: #000; font-size: 16px; }
+
+input[type='text']:-moz-placeholder, input[type='number']:-moz-placeholder, input[type='email']:-moz-placeholder, input[type='tel']:-moz-placeholder, input[type='search']:-moz-placeholder, input[type='url']:-moz-placeholder, input[type='file']:-moz-placeholder, input[type='password']:-moz-placeholder, textarea:-moz-placeholder { color: #000; font-size: 16px; }
+
+input[type='text']:-ms-input-placeholder, input[type='number']:-ms-input-placeholder, input[type='email']:-ms-input-placeholder, input[type='tel']:-ms-input-placeholder, input[type='search']:-ms-input-placeholder, input[type='url']:-ms-input-placeholder, input[type='file']:-ms-input-placeholder, input[type='password']:-ms-input-placeholder, textarea:-ms-input-placeholder { color: #000; font-size: 16px; }
+
+input[type='text'].input-ic, input[type='number'].input-ic, input[type='email'].input-ic, input[type='tel'].input-ic, input[type='search'].input-ic, input[type='url'].input-ic, input[type='file'].input-ic, input[type='password'].input-ic, textarea.input-ic { display: block; width: 100%; background: no-repeat 15px center; }
+
+input[type='text']:focus, input[type='number']:focus, input[type='email']:focus, input[type='tel']:focus, input[type='search']:focus, input[type='url']:focus, input[type='file']:focus, input[type='password']:focus, textarea:focus { outline: none; -webkit-box-shadow: none; box-shadow: none; border-color: #fff; }
+
+textarea { height: auto; resize: none; min-height: 100px; }
+
+/* Buttons */
+.btn, a.btn { cursor: pointer; display: inline-block; vertical-align: middle; padding: 16px; font-size: 16px; text-decoration: none; text-transform: uppercase; color: #fff; border: none; -webkit-border-radius: 4px; border-radius: 4px; }
+
+.btn-main, a.btn-main { background-color: #fff; }
+
+.btn-main:hover, a.btn-main:hover { background-color: #ededed; }
+
+.btn-second, a.btn-second { background-color: #fff; }
+
+.btn-second:hover, a.btn-second:hover { background-color: #ededed; }
+
+.btn-third, a.btn-third { background-color: #fff; }
+
+.btn-third:hover, a.btn-third:hover { background-color: #ededed; }
+
+/* Icons */
+.ic { position: relative; display: inline-block; vertical-align: middle; }
+
+/* Floats */
+.fl { float: left; }
+
+.fr { float: right; }
+
+/* Text align*/
+.text-center { text-align: center !important; }
+
+.text-left { text-align: left !important; }
+
+.text-right { text-align: right !important; }
+
+/*----------------------------*/
+/* Custom styles here */
+h1 { font-family: "Roboto", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; }
+
+/* Always at the end */
+/*==========  Desktop First  ==========*/
+/* Large devices (desktops, less than 1200px) */
+@media only screen and (max-width: 1199px) { /**/ }
+
+/* Medium devices (tablets, less than 992px) */
+@media only screen and (max-width: 991px) { /**/ }
+
+/* Small devices (landscape phones, less than 768px) */
+@media only screen and (max-width: 767px) { /**/ }
+
+/* Extra small devices (portrait phones, less than 576px) */
+@media only screen and (max-width: 575px) { /**/ }
+
+/* Custom */
+@media only screen and (max-width: 480px) { /**/ }
+
+/*==========  Mobile First  ==========*/
+/* Custom */
+@media only screen and (min-width: 480px) { /**/ }
+
+/* Small devices (landscape phones, 576px and up) */
+@media only screen and (min-width: 576px) { /**/ }
+
+/* Medium devices (tablets, 768px and up) */
+@media only screen and (min-width: 768px) { /**/ }
+
+/* Large devices (desktops, 992px and up) */
+@media only screen and (min-width: 992px) { /**/ }
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media only screen and (min-width: 1200px) { /**/ }

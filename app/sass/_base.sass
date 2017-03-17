@@ -1,0 +1,174 @@
+//@import "reset"  /* IF we don't use Bootstrap styles, etc. */
+@import "fonts"
+@import "libs"
+@import "vars"
+//@import "slick"
+//@import "fancybox"
+
+/* Base styles of the project */
+
+*::-webkit-input-placeholder
+    color: #666
+    opacity: 1
+
+*:-moz-placeholder
+    color: #666
+    opacity: 1
+
+*::-moz-placeholder
+    color: #666
+    opacity: 1
+
+*:-ms-input-placeholder
+    color: #666
+    opacity: 1
+
+body input:focus:required:invalid,
+body textarea:focus:required:invalid
+    color: #666
+body input:required:valid,
+body textarea:required:valid
+    color: #666
+
+html, body
+    height: 100%
+
+body
+    position: relative
+    min-width: 320px
+    line-height: $lh-default
+    font-family: $ff-default
+    font-size: 16px
+    background-color: $bg-color
+    color: $txt-color
+    overflow-x: hidden
+    opacity: 1
+    -webkit-font-smoothing: antialiased
+    -moz-osx-font-smoothing: grayscale
+
+
+//.container
+//    position: relative
+//    max-width: 1200px
+//    min-width: 320px
+//    margin: 0 auto
+//    padding: 0 15px
+//
+//.main
+//    position: relative
+//    overflow: hidden
+//    min-height: 100%
+
+
+/* Headings */
+
+h1, h2, h3, h4, h5, h6
+    margin: 0
+    font-family: $ff-headings
+
+
+/* Links */
+
+a
+    color: $lnk-color
+    text-decoration: none
+    &:hover
+        text-decoration: none
+        color: $lnk-color-dk
+
+
+/* Form inputs */
+
+input[type='text'],
+input[type='number'],
+input[type='email'],
+input[type='tel'],
+input[type='search'],
+input[type='url'],
+input[type='file'],
+input[type='password'],
+textarea
+    padding: 8px
+    margin-bottom: 15px
+    color: $txt-color
+    font-size: 16px
+    background: #fff
+    border: 2px solid $brd-color
+    border-radius: 4px
+    +placeholder
+        color: #727272
+        font-size: 16px
+    &.input-ic
+        display: block
+        width: 100%
+        background: no-repeat 15px center
+        &-user
+            //background-image: url()
+        &-pass
+            //background-image: url()
+        &-mail
+            //background-image: url()
+    &:focus
+        outline: none
+        box-shadow: none
+        border-color: $brd-color-dk
+
+textarea
+    height: auto
+    resize: none
+    min-height: 100px
+
+
+/* Buttons */
+
+.btn, a.btn
+    cursor: pointer
+    display: inline-block
+    vertical-align: middle
+    padding: 16px
+    font-size: 16px
+    text-decoration: none
+    text-transform: uppercase
+    color: $txt-color-lt
+    border: none
+    border-radius: 4px
+    &-main
+        background-color: $btn-color
+        &:hover
+            background-color: darken($btn-color, 7%)
+    &-second
+        background-color: $btn-color
+        &:hover
+            background-color: darken($btn-color, 7%)
+    &-third
+        background-color: $btn-color
+        &:hover
+            background-color: darken($btn-color, 7%)
+
+
+/* Icons */
+
+.ic
+    position: relative
+    display: inline-block
+    vertical-align: middle
+
+
+/* Floats */
+
+.fl
+    float: left
+.fr
+    float: right
+
+
+/* Text align*/
+
+.text-center
+    text-align: center !important
+.text-left
+    text-align: left !important
+.text-right
+    text-align: right !important
+
+/*----------------------------*/
