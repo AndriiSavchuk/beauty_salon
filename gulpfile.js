@@ -18,6 +18,7 @@ var gulp           = require('gulp'),
 gulp.task('scripts', function () {
     return gulp.src([
         'app/libs/jquery/jquery.min.js',
+        'app/libs/parallax/parallax.min.js',
         'app/libs/waypoints/jquery.waypoints.min.js',
         'app/libs/mmenu/jquery.mmenu.all.min.js',
         'app/js/scripts.js'

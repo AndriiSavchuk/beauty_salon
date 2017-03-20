@@ -3254,7 +3254,7 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 /*----------------------------*/
 /* Header styles */
-.header { min-height: 700px; height: 100vh; background-color: #142129; }
+.header { min-height: 700px; height: 100vh; }
 
 .header .top-line { position: absolute; width: 100%; padding-top: 40px; z-index: 1; }
 
@@ -3271,6 +3271,8 @@ textarea { height: auto; resize: none; min-height: 100px; }
 .header .top-line .hamburger { display: inline-block; position: absolute; right: 3px; top: 13px; }
 
 .header .top-line .hamburger .hamburger-inner, .header .top-line .hamburger .hamburger-inner:after, .header .top-line .hamburger .hamburger-inner:before { position: absolute; width: 34px; height: 2px; -webkit-border-radius: 2px; border-radius: 2px; background-color: #fff; }
+
+#my-content { height: 900px; }
 
 /* Always at the end */
 /* Font Family variables */
