@@ -1,10 +1,49 @@
 @import "base"
 
 
-/* Custom styles here */
+/* Header styles */
 
-h1
-    color: $yellow
+.header
+    min-height: 700px
+    height: 100vh
+    background-color: $dark
+    .top-line
+        position: absolute
+        width: 100%
+        padding-top: 40px
+        z-index: 1
+        a
+            display: inline-block
+            float: left
+            margin-left: 45px
+            font-family: $ff-headings
+            font-size: 36px
+            span
+                font-style: italic
+            .ampersand
+                font-size: 24px
+
+        .phone
+            float: right
+            font-family: "FiraSans", $helvetica
+            margin-right: 85px
+            font-size: 22px
+            color: #fff
+            .fa-mobile
+                color: #555
+                margin-right: 3px
+
+        .hamburger
+            display: inline-block
+            position: absolute
+            right: 3px
+            top: 13px
+            .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+                position: absolute
+                width: 34px
+                height: 2px
+                border-radius: 2px
+                background-color: #fff
 
 
 
