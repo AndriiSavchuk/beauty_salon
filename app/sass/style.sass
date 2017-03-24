@@ -3,22 +3,22 @@
 
 /* Header styles */
 
-
-
 .header
     min-height: 700px
     height: 100vh
+    background-color: $dark
 
     .top-line
         position: absolute
         width: 100%
         padding-top: 40px
         z-index: 1
-        a
+
+        .logo
             display: inline-block
             float: left
             margin-left: 45px
-            font-family: $ff-headings
+            font-family: "Lobster", sans-serif
             font-size: 36px
             span
                 font-style: italic
@@ -32,20 +32,68 @@
             font-size: 22px
             color: #fff
             .fa-mobile
-                color: #555
+                color: $yellow
                 margin-right: 3px
 
-        .hamburger
-            display: inline-block
+
+/* Hamburger styles */
+
+.hamburger
+    display: inline-block
+    position: absolute
+    right: 3px
+    top: 31px
+
+    .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
+        position: absolute
+        width: 34px
+        height: 2px
+        border-radius: 2px
+        background-color: #fff
+
+
+/* Mobile menu styles */
+
+.mm-navbar
+    padding: 25px 0
+    border: none
+
+    .mm-title
+        font-size: 24px
+        font-weight: bold
+        font-style: italic
+
+    .ampersand
+        font-size: 14px
+
+.mm-panels > .mm-panel > .mm-navbar + .mm-listview
+    margin-top: 20px
+
+.mm-listview > li:not(.mm-divider):after
+    border-bottom-style: none
+
+.mm-menu.mm-theme-black .mm-listview > li.mm-selected > a:not(.mm-next), .mm-menu.mm-theme-black .mm-listview > li.mm-selected > span
+    background-color: transparent
+    color: $yellow
+
+.mm-listview
+    li
+        position: relative
+        a
+            transition: color .3s ease
+            padding:
+                left: 16%
+                right: 14%
+                top: 15px
+        &:hover
+            color: $yellow
+        &::before
+            content: '\f219'
+            font-family: FontAwesome, sans-serif
             position: absolute
-            right: 3px
-            top: 13px
-            .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
-                position: absolute
-                width: 34px
-                height: 2px
-                border-radius: 2px
-                background-color: #fff
+            left: 25px
+            top: 15px
+            color: #fff
 
 #my-content
     height: 900px

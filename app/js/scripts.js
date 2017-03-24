@@ -1,16 +1,20 @@
 $(function() {
 
-    /* Auto resize elements */
-    //
-    // var hf = function(){
-    //     var headerHeight = $('header').height();
-    //     var footerHeight = $('footer').height();
-    //     $('.content').css({
-    //         'paddingTop': headerHeight,
-    //         'paddingBottom': footerHeight
-    //     });
-    // };
-    //
-    // $(window).bind('load resize', hf);
+    $('#my-menu').mmenu({
+        extensions: ['widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black'],
+        navbar: {
+            title: '<span class="yellow">S</span><span class="ampersand yellow">&</span><span class="white">Miller</span>'
+        },
+        offCanvas: {
+            position: 'right'
+        }
+    });
+
+    let api = $('#my-menu').data('mmenu');
+    api.bind('opened', function () {
+        $('.hamburger').addClass('is-active');
+    }).bind('closed', function () {
+        $('.hamburger').removeClass('is-active');
+    })
 
 });

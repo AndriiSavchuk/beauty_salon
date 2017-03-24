@@ -12,6 +12,8 @@
 
 @font-face { font-family: "Raleway"; font-style: normal; font-weight: 800; src: url("../fonts/RalewayExtraBold/RalewayExtraBold.eot?#iefix") format("embedded-opentype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff2") format("woff2"), url("../fonts/RalewayExtraBold/RalewayExtraBold.woff") format("woff"), url("../fonts/RalewayExtraBold/RalewayExtraBold.ttf") format("truetype"), url("../fonts/RalewayExtraBold/RalewayExtraBold.svg#Raleway") format("svg"); }
 
+@font-face { font-family: "Lobster"; font-style: normal; font-weight: normal; src: url("../fonts/Lobster/LobsterRegular.eot?#iefix") format("embedded-opentype"), url("../fonts/Lobster/LobsterRegular.woff2") format("woff2"), url("../fonts/Lobster/LobsterRegular.woff") format("woff"), url("../fonts/Lobster/LobsterRegular.ttf") format("truetype"); }
+
 html { font-family: sans-serif; -ms-text-size-adjust: 100%; -webkit-text-size-adjust: 100%; }
 
 body { margin: 0; }
@@ -3254,23 +3256,45 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 /*----------------------------*/
 /* Header styles */
-.header { min-height: 700px; height: 100vh; }
+.header { min-height: 700px; height: 100vh; background-color: #142129; }
 
 .header .top-line { position: absolute; width: 100%; padding-top: 40px; z-index: 1; }
 
-.header .top-line a { display: inline-block; float: left; margin-left: 45px; font-family: "FiraSans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-size: 36px; }
+.header .top-line .logo { display: inline-block; float: left; margin-left: 45px; font-family: "Lobster", sans-serif; font-size: 36px; }
 
-.header .top-line a span { font-style: italic; }
+.header .top-line .logo span { font-style: italic; }
 
-.header .top-line a .ampersand { font-size: 24px; }
+.header .top-line .logo .ampersand { font-size: 24px; }
 
 .header .top-line .phone { float: right; font-family: "FiraSans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; margin-right: 85px; font-size: 22px; color: #fff; }
 
-.header .top-line .phone .fa-mobile { color: #555; margin-right: 3px; }
+.header .top-line .phone .fa-mobile { color: #F9C869; margin-right: 3px; }
 
-.header .top-line .hamburger { display: inline-block; position: absolute; right: 3px; top: 13px; }
+/* Hamburger styles */
+.hamburger { display: inline-block; position: absolute; right: 3px; top: 31px; }
 
-.header .top-line .hamburger .hamburger-inner, .header .top-line .hamburger .hamburger-inner:after, .header .top-line .hamburger .hamburger-inner:before { position: absolute; width: 34px; height: 2px; -webkit-border-radius: 2px; border-radius: 2px; background-color: #fff; }
+.hamburger .hamburger-inner, .hamburger .hamburger-inner:after, .hamburger .hamburger-inner:before { position: absolute; width: 34px; height: 2px; -webkit-border-radius: 2px; border-radius: 2px; background-color: #fff; }
+
+/* Mobile menu styles */
+.mm-navbar { padding: 25px 0; border: none; }
+
+.mm-navbar .mm-title { font-size: 24px; font-weight: bold; font-style: italic; }
+
+.mm-navbar .ampersand { font-size: 14px; }
+
+.mm-panels > .mm-panel > .mm-navbar + .mm-listview { margin-top: 20px; }
+
+.mm-listview > li:not(.mm-divider):after { border-bottom-style: none; }
+
+.mm-menu.mm-theme-black .mm-listview > li.mm-selected > a:not(.mm-next), .mm-menu.mm-theme-black .mm-listview > li.mm-selected > span { background-color: transparent; color: #F9C869; }
+
+.mm-listview li { position: relative; }
+
+.mm-listview li a { -webkit-transition: color .3s ease; transition: color .3s ease; padding-left: 16%; padding-right: 14%; padding-top: 15px; }
+
+.mm-listview li:hover { color: #F9C869; }
+
+.mm-listview li::before { content: '\f219'; font-family: FontAwesome, sans-serif; position: absolute; left: 25px; top: 15px; color: #fff; }
 
 #my-content { height: 900px; }
 
