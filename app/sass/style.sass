@@ -35,6 +35,57 @@
                 color: $yellow
                 margin-right: 3px
 
+    .title-flex
+        display: flex
+        height: 100%
+        position: relative
+        top: 0
+
+        .flex-center
+            margin: auto
+
+        p
+            margin-top: 40px
+
+    .welcome
+        p
+
+            font-size: 14px
+            text-transform: uppercase
+            display: flex
+            align-items: center
+            white-space: nowrap
+            margin: 0
+            span
+                margin: 0 10px
+            &::before, &::after
+                content: ''
+                position: relative
+                display: inline-block
+                width: 100%
+                height: 1px
+                background-color: #fff
+
+        .saloon-heading
+            margin-bottom: 20px
+            padding-bottom: 10px
+            font-family: "Raleway", $helvetica
+            font-size: 70px
+            font-weight: 100
+            border-bottom: 1px solid #fff
+
+        strong
+            text-transform: uppercase
+            .fa
+                margin-right: 10px
+                font-size: 12px
+                color: $yellow
+                &:last-child
+                    margin-right: 0
+                    margin-left: 10px
+
+    .btn
+        margin-top: 25px
 
 /* Hamburger styles */
 
@@ -95,8 +146,16 @@
             top: 15px
             color: #fff
 
+
+
+
+
+
 #my-content
     height: 900px
+
+
+
 
 /* Always at the end */
 

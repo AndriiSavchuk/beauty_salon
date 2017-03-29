@@ -24,7 +24,7 @@ gulp.task('scripts', function () {
         'app/js/scripts.js'
     ])
         .pipe(concat('script.min.js'))
-        // .pipe(uglify())
+        .pipe(uglify())
         .pipe(gulp.dest('app/js'))
         .pipe(browserSync.reload({stream: true}));
 });

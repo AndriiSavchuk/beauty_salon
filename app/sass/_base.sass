@@ -37,12 +37,11 @@ body
     font-family: $ff-default
     font-size: 16px
     background-color: $bg-color
-    color: $txt-color
+    color: #fff
     overflow-x: hidden
     opacity: 1
     -webkit-font-smoothing: antialiased
     -moz-osx-font-smoothing: grayscale
-
 
 
 header, section
@@ -58,7 +57,11 @@ section
 
 h1, h2, h3, h4, h5, h6
     margin: 0
+    line-height: $lh-heading
     font-family: $ff-headings
+    text-transform: uppercase
+    color: #fff
+
 
 
 /* Links */
@@ -116,28 +119,44 @@ textarea
 /* Buttons */
 
 .btn, a.btn
-    cursor: pointer
     display: inline-block
-    vertical-align: middle
-    padding: 16px
-    font-size: 16px
-    text-decoration: none
-    text-transform: uppercase
-    color: $txt-color-lt
     border: none
-    border-radius: 4px
-    &-main
-        background-color: $btn-color
-        &:hover
-            background-color: darken($btn-color, 7%)
-    &-second
-        background-color: $btn-color
-        &:hover
-            background-color: darken($btn-color, 7%)
-    &-third
-        background-color: $btn-color
-        &:hover
-            background-color: darken($btn-color, 7%)
+    color: #fff
+    text-decoration: none
+    background-color: $btn-color
+    padding: 15px 45px
+    font-size: 14px
+    text-transform: uppercase
+    font-weight: 600
+    letter-spacing: 3px
+    border-radius: 2px
+    text-align: center
+    position: relative
+    outline: none
+    transition: background-color .1s ease
+    &::after
+        transition: background-color .2s ease
+        position: absolute
+        content: ''
+        height: 4px
+        bottom: 0
+        width: 100%
+        background-color: darken($btn-color, 50%)
+        opacity: .18
+        border-bottom-left-radius: 2px
+        border-bottom-right-radius: 2px
+        left: 0
+    &:focus, &:hover
+        text-decoration: none
+        color: #fff
+    &:hover
+        background-color: lighten($btn-color, 5%)
+        &::after
+            opacity: .22
+    &:active
+        background-color: darken($btn-color, 5%)
+        &::after
+            opacity: .32
 
 
 /* Icons */
