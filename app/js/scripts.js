@@ -10,7 +10,7 @@ $(function() {
         }
     });
 
-    let api = $('#my-menu').data('mmenu');
+    var api = $('#my-menu').data('mmenu');
     api.bind('opened', function () {
         $('.hamburger').addClass('is-active');
     }).bind('closed', function () {
