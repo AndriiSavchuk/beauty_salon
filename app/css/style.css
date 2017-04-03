@@ -3275,7 +3275,7 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .header .top-line .logo .ampersand { font-size: 24px; }
 
-.header .top-line .phone { float: right; font-family: "FiraSans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; margin-right: 85px; font-size: 22px; color: #fff; }
+.header .top-line .phone { float: right; font-family: "FiraSans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; margin-right: 85px; padding-top: 18px; font-size: 22px; color: #fff; }
 
 .header .top-line .phone .fa-mobile { color: #F9C869; margin-right: 3px; }
 
@@ -3297,7 +3297,7 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .header .header-title .title-flex .welcome strong .fa:last-child { margin-right: 0; margin-left: 10px; }
 
-.header .header-title .title-flex .welcome .btn { margin-top: 25px; }
+.header .header-title .title-flex .btn { margin-top: 25px; }
 
 .header .header-social { position: absolute; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; top: 0; right: 0; height: 100%; padding: 0 12px; border-left: 1px solid rgba(255, 255, 255, 0.1); }
 
@@ -3306,7 +3306,7 @@ textarea { height: auto; resize: none; min-height: 100px; }
 .header .header-contacts .fa { margin-right: 10px; color: #555; }
 
 /* Hamburger styles */
-.hamburger { display: inline-block; position: absolute; right: -5px; top: 31px; /* Mobile menu styles */ }
+.hamburger { display: inline-block; position: absolute; right: -5px; top: 50px; /* Mobile menu styles */ }
 
 .hamburger .hamburger-inner, .hamburger .hamburger-inner:after, .hamburger .hamburger-inner:before { position: absolute; width: 34px; height: 2px; -webkit-border-radius: 2px; border-radius: 2px; background-color: #fff; }
 
@@ -3331,41 +3331,27 @@ textarea { height: auto; resize: none; min-height: 100px; }
 .mm-listview li::before { content: '\f219'; font-family: FontAwesome, sans-serif; position: absolute; left: 25px; top: 15px; color: #fff; }
 
 /* Always at the end */
-/* Font Family variables */
-/* Line height variables */
-/* Colors variables */
-/* Text colors variables */
-/* Links colors variables */
-/* Border colors variables */
-/* Button colors variables */
 /*==========  Desktop First  ==========*/
 /* Large devices (desktops, less than 1200px) */
-@media only screen and (max-width: 1199px) { /**/ }
+@media only screen and (max-width: 1199px) { /* Header styles */
+  .header .header-title .title-flex .welcome .saloon-heading { font-size: 64px; } }
 
 /* Medium devices (tablets, less than 992px) */
-@media only screen and (max-width: 991px) { /**/ }
+@media only screen and (max-width: 991px) { /* Header styles */
+  .header .header-title .title-flex .welcome .saloon-heading { font-size: 48px; }
+  .header .header-title .title-flex .btn { padding: 12px 45px; } }
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 767px) { /**/ }
 
 /* Extra small devices (portrait phones, less than 576px) */
-@media only screen and (max-width: 575px) { /**/ }
+@media only screen and (max-width: 575px) { /* Header styles */
+  .header .header-title .title-flex .welcome p { font-size: 12px; }
+  .header .header-title .title-flex .welcome .saloon-heading { font-size: 44px; } }
 
 /* Custom */
-@media only screen and (max-width: 480px) { /**/ }
-
-/*==========  Mobile First  ==========*/
-/* Custom */
-@media only screen and (min-width: 480px) { /**/ }
-
-/* Small devices (landscape phones, 576px and up) */
-@media only screen and (min-width: 576px) { /**/ }
-
-/* Medium devices (tablets, 768px and up) */
-@media only screen and (min-width: 768px) { /**/ }
-
-/* Large devices (desktops, 992px and up) */
-@media only screen and (min-width: 992px) { /**/ }
-
-/* Extra large devices (large desktops, 1200px and up) */
-@media only screen and (min-width: 1200px) { /**/ }
+@media only screen and (max-width: 480px) { /* Header styles */
+  .header .top-line .logo { font-size: 30px; }
+  .header .top-line .phone { visibility: hidden; }
+  .header .header-title .title-flex p { font-size: 14px; }
+  .header .header-title .title-flex p .saloon-heading { font-size: 40px; } }
