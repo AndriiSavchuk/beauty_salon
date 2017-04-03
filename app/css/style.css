@@ -3265,7 +3265,7 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 /*----------------------------*/
 /* Header styles */
-.header { min-height: 700px; height: 100vh; background-color: #142129; /* Hamburger styles */ }
+.header { min-height: 700px; height: 100vh; background-color: #142129; }
 
 .header .top-line { position: absolute; width: 100%; padding-top: 40px; z-index: 1; }
 
@@ -3301,6 +3301,11 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .header .header-social { position: absolute; display: -webkit-box; display: -webkit-flex; display: -ms-flexbox; display: flex; top: 0; right: 0; height: 100%; padding: 0 12px; border-left: 1px solid rgba(255, 255, 255, 0.1); }
 
+.header .header-contacts { position: absolute; bottom: 0; left: 0; width: 100%; padding: 12px 0; border-top: 1px solid rgba(255, 255, 255, 0.15); background-color: rgba(21, 21, 21, 0.15); }
+
+.header .header-contacts .fa { margin-right: 10px; color: #555; }
+
+/* Hamburger styles */
 .hamburger { display: inline-block; position: absolute; right: -5px; top: 31px; /* Mobile menu styles */ }
 
 .hamburger .hamburger-inner, .hamburger .hamburger-inner:after, .hamburger .hamburger-inner:before { position: absolute; width: 34px; height: 2px; -webkit-border-radius: 2px; border-radius: 2px; background-color: #fff; }
