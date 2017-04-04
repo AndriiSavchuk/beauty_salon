@@ -165,8 +165,15 @@
             color: #fff
 
 
+/* Services styles */
 
+$colors: $blue, $red, $yellow
+@for $i from 1 through length($colors)
+    .carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
+        background-color: nth($colors, $i)
 
+.services
+    color: #000
 
 
 
