@@ -29,71 +29,89 @@
             float: right
             font-family: "FiraSans", $helvetica
             margin-right: 85px
+            padding-top: 18px
             font-size: 22px
             color: #fff
             .fa-mobile
                 color: $yellow
                 margin-right: 3px
 
-    .title-flex
-        display: flex
-        height: 100%
+    .header-title
         position: relative
+        display: flex
         top: 0
-
-        .flex-center
+        height: 100%
+        .title-flex
             margin: auto
 
-        p
-            margin-top: 40px
+            .welcome
+                p
+                    font-size: 14px
+                    text-transform: uppercase
+                    display: flex
+                    align-items: center
+                    white-space: nowrap
+                    margin: 0
+                    span
+                        margin: 0 10px
+                    &::before, &::after
+                        content: ''
+                        position: relative
+                        display: inline-block
+                        width: 100%
+                        height: 1px
+                        background-color: #fff
 
-    .welcome
-        p
+                .saloon-heading
+                    margin-bottom: 20px
+                    padding-bottom: 10px
+                    font-family: "Raleway", $helvetica
+                    font-size: 70px
+                    font-weight: 100
+                    border-bottom: 1px solid #fff
 
-            font-size: 14px
-            text-transform: uppercase
-            display: flex
-            align-items: center
-            white-space: nowrap
-            margin: 0
-            span
-                margin: 0 10px
-            &::before, &::after
-                content: ''
-                position: relative
-                display: inline-block
-                width: 100%
-                height: 1px
-                background-color: #fff
+                strong
+                    text-transform: uppercase
+                    .fa
+                        margin-right: 10px
+                        font-size: 12px
+                        color: $yellow
+                        &:last-child
+                            margin-right: 0
+                            margin-left: 10px
 
-        .saloon-heading
-            margin-bottom: 20px
-            padding-bottom: 10px
-            font-family: "Raleway", $helvetica
-            font-size: 70px
-            font-weight: 100
-            border-bottom: 1px solid #fff
+            .btn
+                margin-top: 25px
 
-        strong
-            text-transform: uppercase
-            .fa
-                margin-right: 10px
-                font-size: 12px
-                color: $yellow
-                &:last-child
-                    margin-right: 0
-                    margin-left: 10px
+    .header-social
+        position: absolute
+        display: flex
+        top: 0
+        right: 0
+        height: 100%
+        padding: 0 12px
+        border-left: 1px solid rgba(#fff, .1)
 
-    .btn
-        margin-top: 25px
+    .header-contacts
+        position: absolute
+        bottom: 0
+        left: 0
+        width: 100%
+        padding: 12px 0
+        border-top: 1px solid rgba(#fff, .15)
+        background-color: rgba(#151515, .15)
+        .fa
+            margin-right: 10px
+            color: #555
+
 
 /* Hamburger styles */
 
 .hamburger
     display: inline-block
     position: absolute
-    right: 3px
-    top: 31px
+    right: -5px
+    top: 50px
 
     .hamburger-inner, .hamburger-inner:after, .hamburger-inner:before
         position: absolute
@@ -103,7 +121,7 @@
         background-color: #fff
 
 
-/* Mobile menu styles */
+    /* Mobile menu styles */
 
 .mm-navbar
     padding: 25px 0
@@ -147,12 +165,77 @@
             color: #fff
 
 
+/* Services styles */
 
+$colors: $blue, $red, $yellow
+@for $i from 1 through length($colors)
+    .carousel-services .owl-item:nth-child(#{length($colors)}n+#{$i})
+        background-color: nth($colors, $i)
 
+.services
+    .services-block
+        &:hover
+            .service-img
+                opacity: 1
 
+        .service-img
+            -webkit-background-size: cover
+            background-size: cover
+            background-position: center center
+            opacity: .8
+            transition: opacity .7s ease
 
-#my-content
-    height: 900px
+        .service-content
+            font-family: "Raleway", $helvetica
+            padding: 60px 10%
+            text-align: center
+            .service-logo
+                color: #4a4a4a
+                font-size: 18px
+                font-style: italic
+                text-transform: none
+                span
+                    font-size: 12px
+
+            .service-title
+                line-height: 1.2
+                font-size: 30px
+                font-weight: 800
+                margin-bottom: 20px
+                span
+                    display: block
+                    font-size: 18px
+                    font-weight: 300
+
+            .service-list
+                list-style: none
+                padding: 0
+                font-size: 18px
+                font-weight: 300
+                li
+                    padding: 9px
+                    border-bottom: 1px solid rgba(#000, .12)
+                    &:last-child
+                        border-bottom: none
+                    strong
+                        font-family: "FiraSans", $helvetica
+                        color: #4a4a4a
+
+            .btn
+                margin-top: 20px
+                
+            .btn.btn-white
+                background-color: #fff
+                color: #444
+                &:after
+                    background-color: rgba(#000, .6)
+                &:hover
+                    &:after
+                        background-color: rgba(#000, .2)
+                &:active
+                    &:after
+                        background-color: rgba(#000, .4)
+
 
 
 

@@ -1,5 +1,7 @@
 $(function() {
 
+    /* Mobile menu plugin settings */
+
     $('#my-menu').mmenu({
         extensions: ['widescreen', 'theme-black', 'effect-menu-slide', 'pagedim-black'],
         navbar: {
@@ -11,10 +13,57 @@ $(function() {
     });
 
     var api = $('#my-menu').data('mmenu');
+
     api.bind('opened', function () {
         $('.hamburger').addClass('is-active');
     }).bind('closed', function () {
         $('.hamburger').removeClass('is-active');
-    })
+    });
+
+
+    /* Owl Carousel plugin settings */
+
+
+    $('.carousel-services').on('initialized.owl.carousel', function () {
+       setTimeout(function () {
+           serviceImgAutoHeight(); // Set timeout for correct work of this function
+       }, 100)
+    });
+
+    $('.carousel-services').owlCarousel({
+        loop: true,
+        nav: true,
+        smartSpeed: 700,
+        navText: ['<i class="fa fa-angle-double-left"></i>', '<i class="fa fa-angle-double-right"></i>'],
+        responsive: {
+            0: {
+                items: 1
+            },
+            800: {
+                items: 2
+            },
+            1100: {
+                items: 3
+            }
+        }
+    });
+
+    /* Function for image auto height calculating in Service block */
+
+    function serviceImgAutoHeight() {
+        $('.services-block').each(function () {
+
+            var ths = $(this),
+                thsHeight = ths.find('.service-content').outerHeight();
+                ths.find('.service-img').css('min-height', thsHeight);
+        });
+    }serviceImgAutoHeight();
+
+
+
 
 });
+
+
+
+
