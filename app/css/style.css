@@ -3425,6 +3425,8 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .carousel-services .owl-item:nth-child(3n+3) { background-color: #F9C869; }
 
+.services { position: relative; }
+
 .services .services-block:hover .service-img { opacity: 1; }
 
 .services .services-block .service-img { background-size: cover; background-position: center center; opacity: .8; -webkit-transition: opacity .7s ease; transition: opacity .7s ease; }
@@ -3456,6 +3458,14 @@ textarea { height: auto; resize: none; min-height: 100px; }
 .services .services-block .service-content .btn.btn-white:hover:after { background-color: rgba(0, 0, 0, 0.2); }
 
 .services .services-block .service-content .btn.btn-white:active:after { background-color: rgba(0, 0, 0, 0.4); }
+
+.services .owl-nav { position: absolute; top: 0; width: 100%; }
+
+.services .owl-nav > div { position: absolute; width: 64px; height: 64px; background-color: #fff; color: #142129; text-align: center; line-height: 64px; font-size: 26px; }
+
+.services .owl-nav > div.owl-prev { left: 0; }
+
+.services .owl-nav > div.owl-next { right: 0; }
 
 /* Always at the end */
 /*==========  Desktop First  ==========*/
