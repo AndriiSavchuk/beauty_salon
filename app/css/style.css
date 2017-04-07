@@ -3425,7 +3425,11 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .carousel-services .owl-item:nth-child(3n+3) { background-color: #F9C869; }
 
-.services { color: #000; }
+.services .services-block .service-content { text-align: center; }
+
+.services .services-block .service-content .service-list { list-style: none; padding: 0; font-size: 18px; font-weight: 300; }
+
+.services .services-block .service-content .service-list strong { color: #000; }
 
 /* Always at the end */
 /*==========  Desktop First  ==========*/
