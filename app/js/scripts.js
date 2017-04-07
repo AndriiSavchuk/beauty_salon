@@ -43,14 +43,14 @@ $(function() {
 
 
 
-    function imgHeight() {
+    function serviceImgAutoHeight() {
         $('.services-block').each(function () {
             var ths = $(this),
                 thsHeight = ths.find('.service-content').outerHeight();
                 ths.find('.service-img').css('min-height', thsHeight);
 
         });
-    }imgHeight();
+    }serviceImgAutoHeight();
 
 });
 
