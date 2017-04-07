@@ -173,6 +173,7 @@ $colors: $blue, $red, $yellow
         background-color: nth($colors, $i)
 
 .services
+    position: relative
     .services-block
         &:hover
             .service-img
@@ -236,6 +237,23 @@ $colors: $blue, $red, $yellow
                     &:after
                         background-color: rgba(#000, .4)
 
+    .owl-nav
+        position: absolute
+        top: 0
+        width: 100%
+        > div
+            position: absolute
+            width: 64px
+            height: 64px
+            background-color: #fff
+            color: $dark
+            text-align: center
+            line-height: 64px
+            font-size: 26px
+            &.owl-prev
+                left: 0
+            &.owl-next
+                right: 0
 
 
 
