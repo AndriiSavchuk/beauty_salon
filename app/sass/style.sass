@@ -174,18 +174,70 @@ $colors: $blue, $red, $yellow
 
 .services
     .services-block
+        &:hover
+            .service-img
+                opacity: 1
+
+        .service-img
+            -webkit-background-size: cover
+            background-size: cover
+            background-position: center center
+            opacity: .8
+            transition: opacity .7s ease
 
         .service-content
+            font-family: "Raleway", $helvetica
+            padding: 60px 10%
             text-align: center
+            .service-logo
+                color: #4a4a4a
+                font-size: 18px
+                font-style: italic
+                text-transform: none
+                span
+                    font-size: 12px
+
+            .service-title
+                line-height: 1.2
+                font-size: 30px
+                font-weight: 800
+                margin-bottom: 20px
+                span
+                    display: block
+                    font-size: 18px
+                    font-weight: 300
+
             .service-list
                 list-style: none
                 padding: 0
                 font-size: 18px
                 font-weight: 300
-                strong
-                    color: #000
+                li
+                    padding: 9px
+                    border-bottom: 1px solid rgba(#000, .12)
+                    &:last-child
+                        border-bottom: none
+                    strong
+                        font-family: "FiraSans", $helvetica
+                        color: #4a4a4a
 
-        .service-img
+            .btn
+                margin-top: 20px
+                
+            .btn.btn-white
+                background-color: #fff
+                color: #444
+                &:after
+                    background-color: rgba(#000, .6)
+                &:hover
+                    &:after
+                        background-color: rgba(#000, .2)
+                &:active
+                    &:after
+                        background-color: rgba(#000, .4)
+
+
+
 
 
 /* Always at the end */

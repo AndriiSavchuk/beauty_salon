@@ -3425,11 +3425,37 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .carousel-services .owl-item:nth-child(3n+3) { background-color: #F9C869; }
 
-.services .services-block .service-content { text-align: center; }
+.services .services-block:hover .service-img { opacity: 1; }
+
+.services .services-block .service-img { background-size: cover; background-position: center center; opacity: .8; -webkit-transition: opacity .7s ease; transition: opacity .7s ease; }
+
+.services .services-block .service-content { font-family: "Raleway", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; padding: 60px 10%; text-align: center; }
+
+.services .services-block .service-content .service-logo { color: #4a4a4a; font-size: 18px; font-style: italic; text-transform: none; }
+
+.services .services-block .service-content .service-logo span { font-size: 12px; }
+
+.services .services-block .service-content .service-title { line-height: 1.2; font-size: 30px; font-weight: 800; margin-bottom: 20px; }
+
+.services .services-block .service-content .service-title span { display: block; font-size: 18px; font-weight: 300; }
 
 .services .services-block .service-content .service-list { list-style: none; padding: 0; font-size: 18px; font-weight: 300; }
 
-.services .services-block .service-content .service-list strong { color: #000; }
+.services .services-block .service-content .service-list li { padding: 9px; border-bottom: 1px solid rgba(0, 0, 0, 0.12); }
+
+.services .services-block .service-content .service-list li:last-child { border-bottom: none; }
+
+.services .services-block .service-content .service-list li strong { font-family: "FiraSans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; color: #4a4a4a; }
+
+.services .services-block .service-content .btn { margin-top: 20px; }
+
+.services .services-block .service-content .btn.btn-white { background-color: #fff; color: #444; }
+
+.services .services-block .service-content .btn.btn-white:after { background-color: rgba(0, 0, 0, 0.6); }
+
+.services .services-block .service-content .btn.btn-white:hover:after { background-color: rgba(0, 0, 0, 0.2); }
+
+.services .services-block .service-content .btn.btn-white:active:after { background-color: rgba(0, 0, 0, 0.4); }
 
 /* Always at the end */
 /*==========  Desktop First  ==========*/

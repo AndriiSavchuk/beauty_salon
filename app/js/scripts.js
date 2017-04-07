@@ -23,6 +23,13 @@ $(function() {
 
     /* Owl Carousel plugin settings */
 
+
+    $('.carousel-services').on('initialized.owl.carousel', function () {
+       setTimeout(function () {
+           serviceImgAutoHeight(); // Set timeout for correct work of this function
+       }, 100)
+    });
+
     $('.carousel-services').owlCarousel({
         loop: true,
         nav: true,
@@ -41,16 +48,19 @@ $(function() {
         }
     });
 
-
+    /* Function for image auto height calculating in Service block */
 
     function serviceImgAutoHeight() {
         $('.services-block').each(function () {
+
             var ths = $(this),
                 thsHeight = ths.find('.service-content').outerHeight();
                 ths.find('.service-img').css('min-height', thsHeight);
-
         });
     }serviceImgAutoHeight();
+
+
+
 
 });
 
