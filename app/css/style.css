@@ -3526,6 +3526,10 @@ section.royal, section.testimonials, section.partners { padding: 5% 0; }
 /* Headings */
 h1, h2, h3, h4, h5, h6 { margin: 0; line-height: 1.4; font-family: "FiraSans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; text-transform: uppercase; color: #fff; }
 
+.h5-logo { color: #4a4a4a; font-size: 18px; font-style: italic; text-transform: none; }
+
+.h5-logo span { font-size: 12px; }
+
 /* Links */
 a { color: #387bff; text-decoration: none; }
 
@@ -3562,6 +3566,14 @@ textarea { height: auto; resize: none; min-height: 100px; }
 .btn:active, a.btn:active { background-color: #f8bf50; }
 
 .btn:active::after, a.btn:active::after { opacity: .32; }
+
+.btn.btn-white { background-color: #fff; color: #444; }
+
+.btn.btn-white:after { background-color: rgba(0, 0, 0, 0.6); }
+
+.btn.btn-white:hover:after { background-color: rgba(0, 0, 0, 0.2); }
+
+.btn.btn-white:active:after { background-color: rgba(0, 0, 0, 0.4); }
 
 /* Social icons */
 .nav-social { margin: auto; }
@@ -3662,7 +3674,7 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .mm-listview li::before { content: '\f219'; font-family: FontAwesome, sans-serif; position: absolute; left: 25px; top: 15px; color: #fff; }
 
-/* Services styles */
+/* Section Services styles */
 .carousel-services .owl-item:nth-child(3n+1) { background-color: #66C7C9; }
 
 .carousel-services .owl-item:nth-child(3n+2) { background-color: #F86868; }
@@ -3676,10 +3688,6 @@ textarea { height: auto; resize: none; min-height: 100px; }
 .services .services-block .service-img { background-size: cover; background-position: center center; opacity: .8; -webkit-transition: opacity .7s ease; transition: opacity .7s ease; }
 
 .services .services-block .service-content { font-family: "Raleway", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; padding: 60px 10%; text-align: center; }
-
-.services .services-block .service-content .service-logo { color: #4a4a4a; font-size: 18px; font-style: italic; text-transform: none; }
-
-.services .services-block .service-content .service-logo span { font-size: 12px; }
 
 .services .services-block .service-content .service-title { line-height: 1.2; font-size: 30px; font-weight: 800; margin-bottom: 20px; }
 
@@ -3695,14 +3703,6 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .services .services-block .service-content .btn { margin-top: 20px; }
 
-.services .services-block .service-content .btn.btn-white { background-color: #fff; color: #444; }
-
-.services .services-block .service-content .btn.btn-white:after { background-color: rgba(0, 0, 0, 0.6); }
-
-.services .services-block .service-content .btn.btn-white:hover:after { background-color: rgba(0, 0, 0, 0.2); }
-
-.services .services-block .service-content .btn.btn-white:active:after { background-color: rgba(0, 0, 0, 0.4); }
-
 .services .owl-nav { position: absolute; top: 0; width: 100%; }
 
 .services .owl-nav > div { position: absolute; width: 64px; height: 64px; background-color: #fff; color: #142129; text-align: center; line-height: 64px; font-size: 26px; }
@@ -3711,7 +3711,7 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .services .owl-nav > div.owl-next { right: 0; }
 
-/* Royal saloon styles */
+/* Section Royal Saloon styles */
 .royal:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #3D3C3C; opacity: .92; }
 
 .royal .royal-block { padding: 5% 10px 0; }
@@ -3734,6 +3734,7 @@ textarea { height: auto; resize: none; min-height: 100px; }
 
 .royal .fotorama__arr--prev::before { content: '\f104'; }
 
+/* Section Registration styles */
 /* Always at the end */
 /*==========  Desktop First  ==========*/
 /* Large devices (desktops, less than 1200px) */
