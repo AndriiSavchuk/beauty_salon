@@ -61,6 +61,7 @@ h1, h2, h3, h4, h5, h6
     margin: 0
     line-height: $lh-heading
     font-family: $ff-headings
+    font-weight: 800
     text-transform: uppercase
     color: #fff
 
@@ -92,37 +93,28 @@ input[type='search'],
 input[type='url'],
 input[type='file'],
 input[type='password'],
-textarea
-    padding: 8px
+textarea,
+select
+    display: inline-block
+    width: 100%
+    padding: 8px 22px
     margin-bottom: 15px
     color: $txt-color
     font-size: 16px
-    background: #fff
-    border: 2px solid $brd-color
-    border-radius: 4px
+    background-color: transparent
+    border: 1px solid rgba(#000, .1)
+    border-bottom: 2px solid rgba(#000, .1)
+    border-radius: 2px
+    outline: none
     +placeholder
-        color: #727272
+        color: #fff
         font-size: 16px
-    &.input-ic
-        display: block
-        width: 100%
-        background: no-repeat 15px center
-        &-user
-            //background-image: url()
-        &-pass
-            //background-image: url()
-        &-mail
-            //background-image: url()
-    &:focus
-        outline: none
-        box-shadow: none
-        border-color: $brd-color-dk
+    option
+        color: $txt-color
 
-textarea
-    height: auto
-    resize: none
-    min-height: 100px
-
+select
+    +placeholder
+        color: #fff
 
 /* Buttons */
 

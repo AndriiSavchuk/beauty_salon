@@ -302,6 +302,63 @@ $colors: $blue, $red, $yellow
 /* Section Registration styles */
 
 .registration
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 50%
+        height: 100%
+        background-color: rgba($yellow, .9)
+
+    .reg-form
+        position: relative
+        padding: 20% 0
+
+        .success
+            display: none
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            text-transform: uppercase
+            font-weight: bold
+            //display: flex
+            z-index: 10
+            span
+                margin: auto
+            & ~ *
+            transition: all .5s ease
+            &.active
+                & ~ *
+                    opacity: .5
+                    filter: blur(10px)
+
+        .form-heading
+            margin: 0
+            font-size: 30px
+
+        //.selectize-input,
+        //.selectize-input.full,
+        //.selectize-dropdown
+        //    width: 100%
+        //    padding: 14px 22px
+        //    margin-bottom: 20px
+        //    background-color: transparent
+        //    border: 1px solid rgba(#000, .1)
+        //    border-bottom: 2px solid rgba(#000, .1)
+        //    color: #fff
+        //    font-size: 16px
+        //    &:focus
+        //        outline: none
+        //.selectize-dropdown
+        //    padding: 0
+        //    background-color: #fff
+        //    color: $txt-color
+
+
+
 
 
 
