@@ -61,31 +61,27 @@ $(function() {
 
     /* Selectize plugin settings */
 
-    // $('select').selectize({
-    //     create: true,
-    // });
+    $('select').selectize({
+        create: true,
+    });
 
-    /* AJAX registration form */
 
-    $(document).ready(function () {
+    /* AJAX email registration form */
 
-        //E-mail Ajax Send
-        $("form").submit(function () { //Change
-            var th = $(this);
-            $.ajax({
-                type: "POST",
-                url: "mail.php", //Change
-                data: th.serialize()
-            }).done(function () {
-                alert("Thank you!");
-                setTimeout(function () {
-                    // Done Functions
-                    th.trigger("reset");
-                }, 1000);
-            });
-            return false;
+    $("form.reg-form").submit(function () { //Change
+        var regForm = $(this);
+        $.ajax({
+            type: "POST",
+            url: "/mail.php", //Change
+            data: th.serialize()
+        }).done(function () {
+            $(regForm).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+            setTimeout(function () {
+                regForm.find('success').removeClass('active').fadeOut();
+                regForm.trigger("reset");
+            }, 2000);
         });
-
+        return false;
     });
 
 

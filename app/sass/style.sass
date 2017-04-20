@@ -324,7 +324,6 @@ $colors: $blue, $red, $yellow
             bottom: 0
             text-transform: uppercase
             font-weight: bold
-            //display: flex
             z-index: 10
             span
                 margin: auto
@@ -339,23 +338,71 @@ $colors: $blue, $red, $yellow
             margin: 0
             font-size: 30px
 
-        //.selectize-input,
-        //.selectize-input.full,
-        //.selectize-dropdown
-        //    width: 100%
-        //    padding: 14px 22px
-        //    margin-bottom: 20px
-        //    background-color: transparent
-        //    border: 1px solid rgba(#000, .1)
-        //    border-bottom: 2px solid rgba(#000, .1)
-        //    color: #fff
-        //    font-size: 16px
-        //    &:focus
-        //        outline: none
-        //.selectize-dropdown
-        //    padding: 0
-        //    background-color: #fff
-        //    color: $txt-color
+
+        /* Selectize plugin styles */
+
+        .selectize-input,
+        .selectize-input.full,
+        .selectize-dropdown
+            width: 100%
+            padding: 14px 22px
+            margin-bottom: 20px
+            background-color: transparent
+            border: 1px solid rgba(#000, .1)
+            border-bottom: 2px solid rgba(#000, .1)
+            color: #fff
+            font-size: 16px
+            &:focus
+                outline: none
+        .selectize-dropdown
+            padding: 0
+            background-color: #fff
+            color: $txt-color
+            font-size: 16px
+
+        .selectize-dropdown-content
+            padding: 5px 0
+            .option
+                padding: 10px 20px
+                &.active
+                    background-color: lighten($yellow, 10)
+
+        .selectize-input.dropdown-active
+            background: transparent
+            &::before
+                display: none
+
+        .selectize-input.input-active
+            background: transparent
+
+        .selectize-control.single
+            .selectize-input, &.dropdown-active
+                &::after
+                    border: none
+                    content: '\f107'
+                    font-family: "FontAwesome"
+                    position: absolute
+                    right: 30px
+                    top: 17px
+                    font-size: 20px
+
+                &.dropdown-active::after
+                    content: '\f106'
+
+        /* End of Selectize plugin styles */
+
+        .btn-white
+            padding: 15px 85px
+
+
+
+/* Section ... styles */
+
+
+
+
+
+
 
 
 
