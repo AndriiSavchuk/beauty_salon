@@ -176,7 +176,7 @@
 
 
 
-/* Services styles */
+/* Section Services styles */
 
 $colors: $blue, $red, $yellow
 @for $i from 1 through length($colors)
@@ -201,13 +201,7 @@ $colors: $blue, $red, $yellow
             font-family: "Raleway", $helvetica
             padding: 60px 10%
             text-align: center
-            .service-logo
-                color: #4a4a4a
-                font-size: 18px
-                font-style: italic
-                text-transform: none
-                span
-                    font-size: 12px
+
 
             .service-title
                 line-height: 1.2
@@ -235,18 +229,6 @@ $colors: $blue, $red, $yellow
 
             .btn
                 margin-top: 20px
-                
-            .btn.btn-white
-                background-color: #fff
-                color: #444
-                &:after
-                    background-color: rgba(#000, .6)
-                &:hover
-                    &:after
-                        background-color: rgba(#000, .2)
-                &:active
-                    &:after
-                        background-color: rgba(#000, .4)
 
     .owl-nav
         position: absolute
@@ -268,7 +250,7 @@ $colors: $blue, $red, $yellow
 
 
 
-/* Royal saloon styles */
+/* Section Royal Saloon styles */
 
 .royal
     &:before
@@ -315,6 +297,115 @@ $colors: $blue, $red, $yellow
                 left: 26px
                 &::before
                     content: '\f104'
+
+
+/* Section Registration styles */
+
+.registration
+    &::before
+        content: ''
+        position: absolute
+        top: 0
+        right: 0
+        width: 50%
+        height: 100%
+        background-color: rgba($yellow, .9)
+
+    .reg-form
+        position: relative
+        padding: 20% 0
+
+        .success
+            display: none
+            position: absolute
+            top: 0
+            left: 0
+            right: 0
+            bottom: 0
+            text-transform: uppercase
+            font-weight: bold
+            z-index: 10
+            span
+                margin: auto
+            & ~ *
+            transition: all .5s ease
+            &.active
+                & ~ *
+                    opacity: .5
+                    filter: blur(10px)
+
+        .form-heading
+            margin: 0
+            font-size: 30px
+
+
+        /* Selectize plugin styles */
+
+        .selectize-input,
+        .selectize-input.full,
+        .selectize-dropdown
+            width: 100%
+            padding: 14px 22px
+            margin-bottom: 20px
+            background-color: transparent
+            border: 1px solid rgba(#000, .1)
+            border-bottom: 2px solid rgba(#000, .1)
+            color: #fff
+            font-size: 16px
+            &:focus
+                outline: none
+        .selectize-dropdown
+            padding: 0
+            background-color: #fff
+            color: $txt-color
+            font-size: 16px
+
+        .selectize-dropdown-content
+            padding: 5px 0
+            .option
+                padding: 10px 20px
+                &.active
+                    background-color: lighten($yellow, 10)
+
+        .selectize-input.dropdown-active
+            background: transparent
+            &::before
+                display: none
+
+        .selectize-input.input-active
+            background: transparent
+
+        .selectize-control.single
+            .selectize-input, &.dropdown-active
+                &::after
+                    border: none
+                    content: '\f107'
+                    font-family: "FontAwesome"
+                    position: absolute
+                    right: 30px
+                    top: 17px
+                    font-size: 20px
+
+                &.dropdown-active::after
+                    content: '\f106'
+
+        /* End of Selectize plugin styles */
+
+        .btn-white
+            padding: 15px 85px
+
+
+
+/* Section ... styles */
+
+
+
+
+
+
+
+
+
 
 
 

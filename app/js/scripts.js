@@ -59,7 +59,30 @@ $(function() {
         });
     }serviceImgAutoHeight();
 
+    /* Selectize plugin settings */
 
+    $('select').selectize({
+        create: true,
+    });
+
+
+    /* AJAX email registration form */
+
+    $("form.reg-form").submit(function () { //Change
+        var regForm = $(this);
+        $.ajax({
+            type: "POST",
+            url: "/mail.php", //Change
+            data: th.serialize()
+        }).done(function () {
+            $(regForm).find('.success').addClass('active').css('display', 'flex').hide().fadeIn();
+            setTimeout(function () {
+                regForm.find('success').removeClass('active').fadeOut();
+                regForm.trigger("reset");
+            }, 2000);
+        });
+        return false;
+    });
 
 
 });

@@ -20,6 +20,7 @@ gulp.task('scripts', function () {
         'app/libs/jquery/jquery.min.js',
         'app/libs/mmenu/jquery.mmenu.all.min.js',
         'app/libs/owl-carousel/owl.carousel.min.js',
+        'app/libs/selectize/selectize.min.js',
         'app/js/scripts.js'
     ])
         .pipe(concat('script.min.js'))
