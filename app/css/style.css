@@ -3882,15 +3882,33 @@ select:-ms-input-placeholder { color: #fff; }
 #registration .reg-form .btn-white { padding: 15px 85px; }
 
 /* Section Testimonials styles */
-#testimonials { height: 600px; }
+#testimonials { padding: 100px 0; }
 
 #testimonials:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #3D3C3C; opacity: .92; }
 
-.quotes { position: absolute; width: 100%; }
+#testimonials h2 { margin-bottom: 30px; }
 
-.quotes::before { content: ',,'; display: block; font-size: 56px; color: #F9C869; font-family: "Times New Roman", serif; font-weight: bold; line-height: 0; top: 200px; }
+#testimonials .owl-carousel .owl-dots { width: 100%; text-align: center; margin-top: 50px; }
 
-.quotes::after { content: ',,'; display: block; font-size: 56px; color: #F9C869; font-family: "Times New Roman", serif; font-weight: bold; line-height: 0; top: 100px; }
+#testimonials .owl-carousel .owl-dots .owl-dot { display: inline-block; width: 8px; height: 8px; background-color: #fff; -webkit-border-radius: 50%; border-radius: 50%; margin: 4px; -webkit-transition: background-color .3s ease, -webkit-transform .3s ease; transition: background-color .3s ease, -webkit-transform .3s ease; transition: background-color .3s ease, transform .3s ease; transition: background-color .3s ease, transform .3s ease, -webkit-transform .3s ease; }
+
+#testimonials .owl-carousel .owl-dots .owl-dot.active { background-color: #F9C869; -webkit-transform: scale(1.3); -ms-transform: scale(1.3); transform: scale(1.3); }
+
+#testimonials .testimonials::before, #testimonials .testimonials::after { content: ',,'; display: block; position: absolute; font-size: 56px; color: #F9C869; font-family: "Times New Roman", serif; font-weight: bold; line-height: 0; }
+
+#testimonials .testimonials::before { right: -30px; top: 100px; }
+
+#testimonials .testimonials::after { -webkit-transform: rotate(180deg); -ms-transform: rotate(180deg); transform: rotate(180deg); left: -40px; bottom: 60px; }
+
+#testimonials .testimonials .testimonial-stars { padding: 10px 0; }
+
+#testimonials .testimonials .testimonial-stars .fa-star { color: #F9C869; }
+
+#testimonials .testimonials .testimonial-header { font-family: "Times New Roman", serif; font-style: italic; font-size: 30px; font-weight: bold; }
+
+#testimonials .testimonials .testimonial-date { font-family: "Times New Roman", serif; font-style: italic; font-size: 15px; color: #888; }
+
+#testimonials .testimonials .testimonial-text { color: #95989A; }
 
 /* Always at the end */
 /*==========  Desktop First  ==========*/
