@@ -84,7 +84,13 @@ $(function() {
         return false;
     });
 
+    /* Owl Carousel plugin settings for section Testimonials */
 
+    $('.testimonials').owlCarousel({
+        loop: true,
+        items: 1,
+        smartSpeed: 700
+    })
 });
 
 
