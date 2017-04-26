@@ -89,7 +89,8 @@ $(function() {
     $('.testimonials').owlCarousel({
         loop: true,
         items: 1,
-        smartSpeed: 700
+        smartSpeed: 700,
+        autoHeight: true
     })
 });
 

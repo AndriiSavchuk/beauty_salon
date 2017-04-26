@@ -3914,37 +3914,41 @@ select:-ms-input-placeholder { color: #fff; }
 /*==========  Desktop First  ==========*/
 /* Large devices (desktops, less than 1200px) */
 @media only screen and (max-width: 1199px) { /* Header styles */
-  .header .header-title .title-flex .welcome .saloon-heading { font-size: 64px; }
+  #header .header-title .title-flex .welcome .saloon-heading { font-size: 64px; }
   /* Section Royal saloon styles */
-  .royal .royal-block { padding: 0; }
-  .royal .fotorama__nav-wrap { bottom: 0; padding: 0; } }
+  #royal .royal-block { padding: 0; }
+  #royal .fotorama__nav-wrap { bottom: 0; padding: 0; } }
 
 /* Medium devices (tablets, less than 992px) */
 @media only screen and (max-width: 991px) { /* Header styles */
-  .header .header-title .title-flex .welcome .saloon-heading { font-size: 48px; }
-  .header .header-title .title-flex .btn { padding: 12px 45px; }
-  /* Royal saloon styles */
-  .royal .royal-block { padding: 5%; }
-  .royal .royal-block .royal-heading { font-size: 24px; }
-  .royal .fotorama__nav-wrap { bottom: 0; padding: 0; } }
+  #header .header-title .title-flex .welcome .saloon-heading { font-size: 48px; }
+  #header .header-title .title-flex .btn { padding: 12px 45px; }
+  /* Section Royal saloon styles */
+  #royal .royal-block { padding: 5%; }
+  #royal .royal-block .royal-heading { font-size: 24px; }
+  #royal .fotorama__nav-wrap { bottom: 0; padding: 0; }
+  /* Section Testimonials styles */
+  #testimonials .testimonials::after { bottom: 90px; } }
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 767px) { /* Section Registration styles */
-  .registration { text-align: center; }
-  .registration::before { width: 100%; }
-  .registration .reg-form { padding: 5% 0; } }
+  #registration { text-align: center; }
+  #registration::before { width: 100%; }
+  #registration .reg-form { padding: 5% 0; }
+  /* Section Testimonials styles */
+  #testimonials .testimonials::before, #testimonials .testimonials::after { display: none; } }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) { /* Header styles */
-  .header .header-title .title-flex .welcome p { font-size: 12px; }
-  .header .header-title .title-flex .welcome .saloon-heading { font-size: 44px; }
+  #header .header-title .title-flex .welcome p { font-size: 12px; }
+  #header .header-title .title-flex .welcome .saloon-heading { font-size: 44px; }
   /* Section Royal saloon styles */
-  .royal .royal-block { padding: 5% 10px 0; }
-  .royal .fotorama__nav-wrap { position: inherit; bottom: 0; padding: 0; } }
+  #royal .royal-block { padding: 5% 10px 0; }
+  #royal .fotorama__nav-wrap { position: inherit; bottom: 0; padding: 0; } }
 
 /* Custom */
 @media only screen and (max-width: 480px) { /* Header styles */
-  .header .top-line .logo { font-size: 30px; }
-  .header .top-line .phone { visibility: hidden; }
-  .header .header-title .title-flex p { font-size: 14px; }
-  .header .header-title .title-flex p .saloon-heading { font-size: 40px; } }
+  #header .top-line .logo { font-size: 30px; }
+  #header .top-line .phone { visibility: hidden; }
+  #header .header-title .title-flex p { font-size: 14px; }
+  #header .header-title .title-flex p .saloon-heading { font-size: 40px; } }
