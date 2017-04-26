@@ -3910,6 +3910,29 @@ select:-ms-input-placeholder { color: #fff; }
 
 #testimonials .testimonials .testimonial-text { color: #95989A; }
 
+/* Section Partners styles */
+#partners { padding: 50px 0; }
+
+#partners:before { content: ''; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background-color: #fff; opacity: .92; }
+
+#partners h2 { margin-bottom: 20px; }
+
+#partners .partners .partner { margin: 0 20px; height: 100%; }
+
+#partners .owl-carousel .owl-item { margin-top: 30px; }
+
+#partners .owl-carousel .owl-item img { max-width: 100%; width: auto; }
+
+#partners .owl-carousel .owl-nav { position: absolute; width: 100%; top: 0; }
+
+#partners .owl-carousel .owl-nav > div { position: absolute; top: 60px; color: #999; font-size: 30px; -webkit-transition: opacity .5s ease; transition: opacity .5s ease; padding: 0 5px; }
+
+#partners .owl-carousel .owl-nav > div:hover { opacity: .6; }
+
+#partners .owl-carousel .owl-nav > div.owl-prev { left: -60px; }
+
+#partners .owl-carousel .owl-nav > div.owl-next { right: -60px; }
+
 /* Always at the end */
 /*==========  Desktop First  ==========*/
 /* Large devices (desktops, less than 1200px) */
@@ -3936,7 +3959,9 @@ select:-ms-input-placeholder { color: #fff; }
   #registration::before { width: 100%; }
   #registration .reg-form { padding: 5% 0; }
   /* Section Testimonials styles */
-  #testimonials .testimonials::before, #testimonials .testimonials::after { display: none; } }
+  #testimonials .testimonials::before, #testimonials .testimonials::after { display: none; }
+  /* Section Partners styles */
+  #partners .owl-carousel .owl-nav { display: none; } }
 
 /* Extra small devices (portrait phones, less than 576px) */
 @media only screen and (max-width: 575px) { /* Header styles */

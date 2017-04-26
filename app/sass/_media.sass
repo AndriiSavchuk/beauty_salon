@@ -58,12 +58,11 @@
     #testimonials
         .testimonials      
             &::after      
-                 bottom: 90px                   
-
+                 bottom: 90px    
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width : 767px)
-
+    
     /* Section Registration styles */
     #registration
         text-align: center
@@ -77,8 +76,13 @@
     #testimonials
         .testimonials      
             &::before, &::after      
-                 display: none           
+                 display: none
 
+    /* Section Partners styles */       
+    #partners
+        .owl-carousel           
+            .owl-nav
+                display: none
 
 
 /* Extra small devices (portrait phones, less than 576px) */

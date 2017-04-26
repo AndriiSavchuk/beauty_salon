@@ -456,8 +456,51 @@ $colors: $blue, $red, $yellow
         .testimonial-text
             color: #95989A
                
-          
+/* Section Partners styles */       
+#partners
+    padding: 50px 0
+    &:before
+        content: ''
+        position: absolute
+        top: 0
+        left: 0
+        width: 100%
+        height: 100%
+        background-color: #fff
+        opacity: .92
 
+    h2
+        margin-bottom: 20px    
+
+    .partners
+        .partner
+            margin: 0 20px
+            height: 100% 
+
+    .owl-carousel            
+        .owl-item
+            margin-top: 30px
+            img
+                max-width: 100%
+                width: auto        
+
+        .owl-nav
+            position: absolute
+            width: 100%
+            top: 0            
+            > div
+                position: absolute
+                top: 60px
+                color: #999
+                font-size: 30px
+                transition: opacity .5s ease
+                padding: 0 5px
+                &:hover
+                    opacity: .6
+                &.owl-prev
+                    left: -60px
+                &.owl-next
+                    right: -60px
 
 
 
