@@ -3947,6 +3947,8 @@ select:-ms-input-placeholder { color: #fff; }
 
 #footer .footer-block .nav-social ul li { display: inline-block; float: left; margin-right: 10px; }
 
+#footer .footer-block .footer-menu { padding-left: 50px; }
+
 #footer .footer-block .footer-menu ul { padding: 0; margin: 0; list-style: none; }
 
 #footer .footer-block .footer-menu ul li.active a { color: #F9C869; }
@@ -3959,7 +3961,15 @@ select:-ms-input-placeholder { color: #fff; }
 
 #footer .footer-block .footer-menu ul a:hover::before, #footer .footer-block .footer-menu ul a:focus::before { color: #F9C869; }
 
-#footer .footer-block .footer-menu ul a::before { content: '\F219'; position: absolute; font-family: "Fontawesome"; left: 0; font-size: 12px; }
+#footer .footer-block .footer-menu ul a::before { content: '\F219'; position: absolute; left: 0; font-family: "Fontawesome"; font-size: 12px; color: #fff; }
+
+#footer .footer-block .footer-addr { position: relative; font-size: 15px; padding-left: 20px; color: #666; }
+
+#footer .footer-block .footer-addr .fa { position: absolute; left: 0; top: 5px; color: #666; }
+
+#footer .footer-block .footer-phone { font-size: 26px; }
+
+#footer .footer-block .footer-phone .fa { top: 12px; font-size: 22px; }
 
 /* Always at the end */
 /*==========  Desktop First  ==========*/
