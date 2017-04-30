@@ -1,6 +1,5 @@
 @import "base"
 
-
 /* Header styles */
 #header
     min-height: 700px
@@ -20,18 +19,7 @@
         position: absolute
         width: 100%
         padding-top: 40px
-        z-index: 1
-
-        .logo
-            display: inline-block
-            float: left
-            margin-left: 45px
-            font-family: "Lobster", sans-serif
-            font-size: 36px
-            span
-                font-style: italic
-            .ampersand
-                font-size: 24px
+        z-index: 1        
 
         .phone
             float: right
@@ -501,6 +489,59 @@ $colors: $blue, $red, $yellow
                     left: -60px
                 &.owl-next
                     right: -60px
+
+/* Footer styles */
+#footer
+    background-color: #242424
+    padding: 3% 0
+    color: #fff
+
+    .footer-block
+        margin: 15px 0
+
+        .logo
+            float: none
+            margin-left: 0
+
+        .salon-descr
+            margin: 0
+            color: #666            
+            
+        .nav-social
+            margin-top: 40px            
+            ul
+                li
+                    display: inline-block
+                    float: left
+                    margin-right: 10px
+
+        .footer-menu
+            ul
+                padding: 0
+                margin: 0
+                list-style: none
+                li.active
+                    a
+                        color: $yellow
+                        &::before
+                            color: $yellow              
+                a
+                    color: #979797
+                    transition: color .3s ease        
+                    display: inline-block
+                    padding: 4px 0 4px 25px
+                    text-decoration: underline
+                    position: relative
+                    &:hover, &:focus
+                        color: $yellow
+                        &::before
+                            color: $yellow   
+                    &::before
+                        content: '\F219'
+                        position: absolute
+                        font-family: "Fontawesome"
+                        left: 0
+                        font-size: 12px
 
 
 
