@@ -3967,9 +3967,13 @@ select:-ms-input-placeholder { color: #fff; }
 
 #footer .footer-block .footer-addr .fa { position: absolute; left: 0; top: 5px; color: #666; }
 
-#footer .footer-block .footer-phone { font-size: 26px; }
+#footer .footer-block .footer-phone { font-size: 26px; white-space: nowrap; }
 
 #footer .footer-block .footer-phone .fa { top: 12px; font-size: 22px; }
+
+#footer .footer-block .footer-map { max-height: 200px; opacity: .7; -webkit-transition: opacity .5s ease; transition: opacity .5s ease; }
+
+#footer .footer-block .footer-map:hover { opacity: 1; }
 
 /* Always at the end */
 /*==========  Desktop First  ==========*/
@@ -3989,7 +3993,9 @@ select:-ms-input-placeholder { color: #fff; }
   #royal .royal-block .royal-heading { font-size: 24px; }
   #royal .fotorama__nav-wrap { bottom: 0; padding: 0; }
   /* Section Testimonials styles */
-  #testimonials .testimonials::after { bottom: 90px; } }
+  #testimonials .testimonials::after { bottom: 90px; }
+  /* Footer styles */
+  #footer .footer-block .footer-phone { font-size: 20px; } }
 
 /* Small devices (landscape phones, less than 768px) */
 @media only screen and (max-width: 767px) { /* Section Registration styles */
