@@ -3629,6 +3629,9 @@ section { background-color: #fff; }
 
 section.royal, section.testimonials, section.partners { padding: 5% 0; }
 
+/* Preloader */
+.preloader { position: fixed; top: 0; bottom: 0; left: 0; right: 0; z-index: 100; }
+
 /* Headings */
 h1, h2, h3, h4, h5, h6 { margin: 0; line-height: 1.4; font-family: "FiraSans", "Helvetica Neue", "Helvetica", "Roboto", "Arial", sans-serif; font-weight: 800; text-transform: uppercase; color: #fff; }
 
@@ -3974,6 +3977,13 @@ select:-ms-input-placeholder { color: #fff; }
 #footer .footer-block .footer-map { max-height: 200px; opacity: .7; -webkit-transition: opacity .5s ease; transition: opacity .5s ease; }
 
 #footer .footer-block .footer-map:hover { opacity: 1; }
+
+/* To top button styles */
+.to-top { cursor: pointer; position: fixed; bottom: 25px; right: -100px; background-color: #e0e0e0; z-index: 12; -webkit-border-radius: 50%; border-radius: 50%; color: #666; font-size: 26px; width: 50px; height: 50px; text-align: center; line-height: 50px; -webkit-transition: all .3s ease; transition: all .3s ease; opacity: .5; }
+
+.to-top:hover { background-color: #F9C869; color: #fff; opacity: 1; }
+
+.to-top.active { right: 25px; }
 
 /* Always at the end */
 /*==========  Desktop First  ==========*/
