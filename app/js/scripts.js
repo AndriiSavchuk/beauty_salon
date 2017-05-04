@@ -91,7 +91,7 @@ $(function() {
         items: 1,
         smartSpeed: 700,
         autoHeight: true
-    })
+    });
 
     /* Owl Carousel plugin settings for section Partners */
 
@@ -116,7 +116,25 @@ $(function() {
                 items: 4
             }
         }
-    })
+    });
+
+    /* To top button script */
+
+    $(window).scroll(function() {
+        if ($(this).scrollTop() > $(this).height()) {
+            $('.to-top').addClass('active');
+        } else {
+            $('.to-top').removeClass('active');    
+        }     
+    });
+
+    $('.to-top').click(function() {
+        $('html, body').stop().animate({scrollTop: 0}, 'slow', 'swing');        
+    });
 });
 
+/* Preloader function */
 
+$(window).on('load', function() {
+    $('.preloader').delay(1000).fadeOut('slow');
+});
